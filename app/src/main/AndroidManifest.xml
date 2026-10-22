@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Internet permission for Firebase/Auth/etc -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FolioVerse"
+        tools:targetApi="31">
+
+        <!-- ✅ Main Launcher Activity -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- All other activities -->
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".UserInfoActivity" />
+        <activity android:name=".SignupEmailActivity" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".ShowProfileActivity" />
+        <activity android:name=".UpdateProfileActivity" />
+        <activity android:name=".UserProfileActivity" />
+        <activity android:name=".RoleSelectionActivity" />
+        <activity android:name=".SetPasswordActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity
+            android:name=".AlertsActivity"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".BookDetailActivity" />
+
+        <!-- 🔒 Admin activity (no launcher filter anymore) -->
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

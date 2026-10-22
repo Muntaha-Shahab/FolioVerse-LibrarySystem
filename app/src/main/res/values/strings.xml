@@ -1,0 +1,70 @@
+<resources>
+
+    <string name="app_name">FolioVerse</string>
+
+        <string name="poetry">Poetry</string>
+        <string name="discover_genres_that_fit_your_folio">📚 Discover Genres That Fit Your Folio!</string>
+        <string name="_2_1k_folios">2.1K Folios</string>
+        <string name="romance">Romance</string>
+        <string name="filter">Filter</string>
+        <string name="expand_genre_list">Expand Genre List</string>
+        <string name="folioverse_logo">FolioVerse Logo</string>
+        <string name="folioverse">FolioVerse</string>
+        <string name="notifications">Notifications</string>
+        <string name="profile">Profile</string>
+        <string name="because_you_like_fantasy">Because you like Fantasy</string>
+        <string name="because_you_like_non_fiction">Because you like Non-Fiction</string>
+        <string name="Search_for_stories_or_people">Search for stories or people</string>
+        <string name="most_popular">Most Popular</string>
+        <string name="newest_first">Newest First</string>
+        <string name="tempest">TEMPEST</string>
+        <string name="fantasy_book1">Fantasy BOOK1</string>
+        <string name="fantasy_book3">Fantasy book3</string>
+        <string name="all_books_list">All books list</string>
+        <string name="trending_book_cover">Trending Book Cover</string>
+        <string name="trending_now">🔥 Trending Now</string>
+        <string name="story_cover">Story cover image</string>
+        <string name="alert_welcome">Welcome to FolioVerse!</string>
+        <string name="alert_new_features">New features have been added.</string>
+        <string name="alert_subscription_expiring">Your subscription will expire in 3 days.</string>
+        <string name="no_messages_yet">No messages yet.</string>
+        <string name="by_author">by %1$s</string>
+        <string name="genre_type">Genre: %1$s</string>
+
+    <string name="default_web_client_id">596489221118-qq0r83imj7tv71u7ov34ipn85p1dif1v.apps.googleusercontent.com</string>
+
+    <string name="welcome_to_admin_dashboard">Welcome to Admin Dashboard</string>
+    <string name="name">Name</string>
+    <string name="role">Role</string>
+    <string name="description">Description</string>
+    <string name="title">Title</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="admin_dashboard">Admin Dashboard</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string name="todo">Add Book</string>
+    <string name="email">Email</string>
+    <string name="Edit">Edit</string>
+    <string name="Delete">Delete</string>
+    <string name="Role">Role</string>
+    <string name="Add_user">Add User</string>
+    <string name="Username">Username</string>
+    <string name="author">Author</string>
+    <string name="genre">Genre</string>
+    <string name="list_of_books">List of books</string>
+    <string name="list_of_users">List of users</string>
+    <string name="Welcome_Admin">Welcome Admin!</string>
+    <string name="users_0">Users: 0</string>
+    <string name="books_0">Books: 0</string>
+    <string name="choose_cover_image">Choose Cover Image</string>
+    <string name="image">Image</string>
+    <string name="select_cover">Select Cover</string>
+    <string name="admin_profile">admin_profile</string>
+    <string name="Admin_profile">Admin_profile</string>
+    <string name="admin">Admin</string>
+    <string name="Admin">Admin</string>
+    <string name="books">Books</string>
+    <string name="keep_track_of_your_library_and_manage_books_smartly">Keep Track of your library and manage books smartly!</string>
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_dashboard"
+        android:title="Dashboard"
+        android:icon="@drawable/ic_dashboard" />
+
+    <item
+        android:id="@+id/nav_manage_users"
+        android:title="Manage Users"
+        android:icon="@drawable/ic_admin" />
+
+    <item
+        android:id="@+id/nav_manage_books"
+        android:title="Manage Books"
+        android:icon="@drawable/ic_books" />
+
+
+
+</menu>

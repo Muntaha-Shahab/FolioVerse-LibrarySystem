@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="orange">#FF5722</color>
+    <color name="gray">#888888</color>
+
+    <!-- Wattpad-inspired colors -->
+    <color name="colorPrimary">#FFA500</color> <!-- orange -->
+    <color name="colorPrimaryDark">#E59400</color> <!-- darker orange -->
+    <color name="colorAccent">#FFA500</color>
+
+
+
+
+    <color name="backgroundLight">#FDFDFD</color>
+    <color name="textPrimary">#222222</color>
+    <color name="textSecondary">#777777</color>
+    <color name="orange_500">#FF5722</color>
+</resources>

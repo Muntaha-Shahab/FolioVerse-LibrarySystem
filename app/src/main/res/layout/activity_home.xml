@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:elevation="4dp"
+        android:background="@android:color/white"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:gravity="center_vertical">
+
+
+
+            <!-- App Title -->
+            <TextView
+                android:id="@+id/appTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="FolioVerse"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#111111"
+                android:gravity="center_vertical" />
+
+            <!-- Notification -->
+            <ImageView
+                android:id="@+id/nav_notifications"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_notification"
+                android:contentDescription="@string/notifications"
+                app:tint="#555555" />
+
+            <!-- Profile -->
+            <ImageView
+                android:id="@+id/profileIcon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:contentDescription="@string/profile"
+                android:src="@drawable/ic_profile_placeholder"
+                app:tint="#555555" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <!-- Scrollable Main Content -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topBar"
+        android:layout_above="@id/bottom_nav">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Genre Section: Fantasy -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/because_you_like_fantasy"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <ImageView  android:id="@+id/fantasyBook1" android:layout_width="140dp" android:layout_height="210dp" android:layout_margin="8dp" android:scaleType="centerCrop" android:src="@drawable/cover_fantasy_1" android:onClick="openBookDetail"/>
+                    <ImageView  android:id="@+id/fantasyBook2" android:layout_width="140dp" android:layout_height="210dp" android:layout_margin="8dp" android:scaleType="centerCrop" android:src="@drawable/cover_fantasy_2" android:onClick="openBookDetail"/>
+                    <ImageView  android:id="@+id/fantasyBook3" android:layout_width="140dp" android:layout_height="210dp" android:layout_margin="8dp" android:scaleType="centerCrop" android:src="@drawable/cover_fantasy_3" android:onClick="openBookDetail"/>
+                    <ImageView  android:id="@+id/fantasyBook4" android:layout_width="140dp" android:layout_height="210dp" android:layout_margin="8dp" android:scaleType="centerCrop" android:src="@drawable/cover_fantasy_4" android:onClick="openBookDetail"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- Genre Section: Humor -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Because you like Humor"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <ImageView android:id="@+id/humorBook1" android:layout_width="140dp" android:layout_height="210dp" android:layout_margin="8dp" android:scaleType="centerCrop" android:src="@drawable/cover_humor_1" android:onClick="openBookDetail"/>
+                    <ImageView android:id="@+id/humorBook2" android:layout_width="140dp" android:layout_height="210dp" android:layout_margin="8dp" android:scaleType="centerCrop" android:src="@drawable/cover_humor_2" android:onClick="openBookDetail"/>
+                    <ImageView android:id="@+id/humorBook3" android:layout_width="140dp" android:layout_height="210dp" android:layout_margin="8dp" android:scaleType="centerCrop" android:src="@drawable/cover_humor_3" android:onClick="openBookDetail"/>
+                    <ImageView android:id="@+id/humorBook4" android:layout_width="140dp" android:layout_height="210dp" android:layout_margin="8dp" android:scaleType="centerCrop" android:src="@drawable/cover_humor_4" android:onClick="openBookDetail"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- Genre Section: Horror -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Because you like Horror"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <ImageView android:id="@+id/horrorBook1" android:layout_width="140dp" android:layout_height="210dp" android:layout_margin="8dp" android:scaleType="centerCrop" android:src="@drawable/cover_horror_1" android:onClick="openBookDetail"/>
+                    <ImageView android:id="@+id/horrorBook2" android:layout_width="140dp" android:layout_height="210dp" android:layout_margin="8dp" android:scaleType="centerCrop" android:src="@drawable/cover_horror_2" android:onClick="openBookDetail"/>
+                    <ImageView android:id="@+id/horrorBook3" android:layout_width="140dp" android:layout_height="210dp" android:layout_margin="8dp" android:scaleType="centerCrop" android:src="@drawable/cover_horror_3" android:onClick="openBookDetail"/>
+                    <ImageView android:id="@+id/horrorBook4" android:layout_width="140dp" android:layout_height="210dp" android:layout_margin="8dp" android:scaleType="centerCrop" android:src="@drawable/cover_horror_4" android:onClick="openBookDetail"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- Genre Section: Mystery -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Because you like Mystery"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <ImageView android:id="@+id/mysteryBook1" android:layout_width="140dp" android:layout_height="210dp" android:layout_margin="8dp" android:scaleType="centerCrop" android:src="@drawable/cover_mystery_1" android:onClick="openBookDetail"/>
+                    <ImageView android:id="@+id/mysteryBook2" android:layout_width="140dp" android:layout_height="210dp" android:layout_margin="8dp" android:scaleType="centerCrop" android:src="@drawable/cover_mystery_2" android:onClick="openBookDetail"/>
+                    <ImageView android:id="@+id/mysteryBook3" android:layout_width="140dp" android:layout_height="210dp" android:layout_margin="8dp" android:scaleType="centerCrop" android:src="@drawable/cover_mystery_3" android:onClick="openBookDetail"/>
+                    <ImageView android:id="@+id/mysteryBook4" android:layout_width="140dp" android:layout_height="210dp" android:layout_margin="8dp" android:scaleType="centerCrop" android:src="@drawable/cover_mystery_4" android:onClick="openBookDetail"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- Genre Section: Sci-Fi -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Because you like Sci-Fi"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp">
+
+                    <ImageView android:id="@+id/sci_fiBook1" android:layout_width="140dp" android:layout_height="210dp" android:layout_margin="8dp" android:scaleType="centerCrop" android:src="@drawable/cover_scifi_1" android:onClick="openBookDetail"/>
+                    <ImageView android:id="@+id/sci_fiBook2" android:layout_width="140dp" android:layout_height="210dp" android:layout_margin="8dp" android:scaleType="centerCrop" android:src="@drawable/cover_scifi_2" android:onClick="openBookDetail"/>
+                    <ImageView android:id="@+id/sci_fiBook3" android:layout_width="140dp" android:layout_height="210dp" android:layout_margin="8dp" android:scaleType="centerCrop" android:src="@drawable/cover_scifi_3" android:onClick="openBookDetail"/>
+                    <ImageView android:id="@+id/sci_fiBook4" android:layout_width="140dp" android:layout_height="210dp" android:layout_margin="8dp" android:scaleType="centerCrop" android:src="@drawable/cover_scifi_4" android:onClick="openBookDetail"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <!-- Genre Section: Non-Fiction -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/because_you_like_non_fiction"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="16dp">
+
+                    <ImageView android:id="@+id/nonfictionBook1" android:layout_width="140dp" android:layout_height="210dp" android:layout_margin="8dp" android:scaleType="centerCrop" android:src="@drawable/cover_nonfiction_1" android:onClick="openBookDetail"/>
+                    <ImageView android:id="@+id/nonfictionBook2" android:layout_width="140dp" android:layout_height="210dp" android:layout_margin="8dp" android:scaleType="centerCrop" android:src="@drawable/cover_nonfiction_2" android:onClick="openBookDetail"/>
+                    <ImageView android:id="@+id/nonfictionBook3" android:layout_width="140dp" android:layout_height="210dp" android:layout_margin="8dp" android:scaleType="centerCrop" android:src="@drawable/cover_nonfiction_3" android:onClick="openBookDetail"/>
+                    <ImageView android:id="@+id/nonfictionBook4" android:layout_width="140dp" android:layout_height="210dp" android:layout_margin="8dp" android:scaleType="centerCrop" android:src="@drawable/cover_nonfiction_4" android:onClick="openBookDetail"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!-- Bottom Navigation Bar -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:itemIconTint="@color/nav_item_color"
+        app:itemTextColor="@color/nav_item_color"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

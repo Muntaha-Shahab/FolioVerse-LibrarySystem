@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginHorizontal="8dp"
+    android:elevation="2dp"
+    android:background="@android:color/white"
+    app:cardCornerRadius="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Left: Icon with medium size and color -->
+        <ImageView
+            android:id="@+id/alertIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="12dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_notification"
+            android:tint="#FF5722"
+            android:background="@drawable/profile_circle_background"
+            android:padding="8dp"
+            android:contentDescription="Alert Icon" />
+
+        <!-- Center: Text block -->
+        <LinearLayout
+            android:id="@+id/alertTextContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/alertIcon"
+            android:layout_marginStart="12dp"
+            android:layout_alignTop="@id/alertIcon"
+            android:layout_alignBottom="@id/alertIcon"
+            android:orientation="vertical"
+            tools:ignore="UnknownId">
+
+            <TextView
+                android:id="@+id/alertTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Must-read queer stories 🌈"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/alertDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="These stories are trending now. Don’t miss them!"
+                android:textColor="#555"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textSize="13sp"
+                android:layout_marginTop="2dp" />
+
+            <TextView
+                android:id="@+id/alertTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📖 1:01 AM"
+                android:textColor="#888"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

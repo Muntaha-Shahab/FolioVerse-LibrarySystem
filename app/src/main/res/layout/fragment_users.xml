@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundLight">
+
+    <!-- Input Fields -->
+    <EditText
+        android:autofillHints="USER1"
+        android:id="@+id/etUsername"
+        android:hint="@string/Username"
+        android:textColor="@android:color/black"
+        android:textColorHint="#888888"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/edittext_background"/>
+
+    <EditText
+        android:autofillHints="USER"
+        android:id="@+id/etRole"
+        android:hint="@string/Role"
+        android:textColor="@android:color/black"
+        android:textColorHint="#888888"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/edittext_background"/>
+
+    <Button
+        android:id="@+id/btnAddUser"
+        android:text="@string/Add_user"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/backgroundLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- List of Users -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvUsers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/list_of_users" />
+</LinearLayout>
