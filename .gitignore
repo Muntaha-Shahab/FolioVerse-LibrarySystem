@@ -13,3 +13,14 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Firebase config (contains your project's keys - never commit; see README > Setup)
+google-services.json
+app/google-services.json
+
+# Android Studio / OS
+.idea/
+*.apk
+*.aab
+.kotlin/
+Thumbs.db
