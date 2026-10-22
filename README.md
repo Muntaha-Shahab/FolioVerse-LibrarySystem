@@ -376,8 +376,9 @@ This started as a team project, and the list below is an honest account of where
 | Name | GitHub |
 |---|---|
 | **Muntaha Shahab** | [@Muntaha-Shahab](https://github.com/Muntaha-Shahab) |
-| **Tehreem Naveed** | |
-| **Eman Hamid** | |
+| **Eman Hamid** | [@emman-hamid](https://github.com/emmaan-hamid) |
+| **Tehreem Naveed** | [@tehreem-naveed](https://github.com/tehreem-naveed) |
+
 
 ## License
 
